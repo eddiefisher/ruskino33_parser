@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'httpclient'
+require 'ruskino33_parser/fixnum'
 require 'ruskino33_parser/anonce'
 require 'ruskino33_parser/movie'
 require "ruskino33_parser/version"
@@ -16,21 +17,5 @@ module Ruskino33Parser
     p = fetch url
     raise(Empty) if p.http_body.content.size.zero?
     p.status == 200 ? Nokogiri::HTML(p.body.encode('utf-8')) : raise(NotFound)
-  end
-end
-
-class Hash
-  def compact
-    delete_if { |k, v| v.nil? }
-  end
-end
-
-class Fixnum
-  def day
-    self * (60 * 60 * 24) # seconds * hours * minutes
-  end
-
-  def ago
-    Time.now - self
   end
 end
