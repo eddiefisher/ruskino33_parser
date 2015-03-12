@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe Ruskino33Parser::Movie do
-  let(:anonce) { Ruskino33Parser::Anonce.new test: true }
+  let(:anonce) { Ruskino33Parser::Announce.new test: true }
   let(:movie) { anonce.movies.first }
 
   let(:title) { 'Духless 2' }

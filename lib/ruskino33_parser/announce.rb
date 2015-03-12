@@ -1,5 +1,5 @@
 module Ruskino33Parser
-  class Anonce
+  class Announce
     attr_accessor :url, :doc
 
     # date: '2015-03-11'
