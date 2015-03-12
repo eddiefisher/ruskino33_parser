@@ -1,6 +1,5 @@
 require 'nokogiri'
 require 'httpclient'
-require 'ruskino33_parser/fixnum'
 require 'ruskino33_parser/anonce'
 require 'ruskino33_parser/movie'
 require "ruskino33_parser/version"
