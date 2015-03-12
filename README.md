@@ -1,9 +1,5 @@
 # Ruskino33Parser
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ruskino33_parser`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -22,7 +18,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Get anonce on this day
+```ruby
+anonce = Ruskino33Parser::Anonce.new
+```
+
+### Get anonce on next day
+```ruby
+anonce = Ruskino33Parser::Anonce.new Date.today + 10.days
+```
+
+### Get object of movies
+```ruby
+anonce.movies
+```
+
+### Get movie title
+```ruby
+anonce.movies.first.title
+```
+
+### Get movie schedules
+```ruby
+anonce.movies.first.schedules
+```
+
+### Get movie other_days
+```ruby
+anonce.movies.first.other_days
+```
 
 ## Development
 
