@@ -2,7 +2,6 @@ module Ruskino33Parser
   class Announce
     attr_accessor :url, :doc, :date
 
-    # date: '2015-03-11'
     def initialize(attributes = {})
       @date = attributes[:date].nil? ? Date.today : Date.parse(attributes[:date].to_s)
       params = { action: :anonce, date: date.strftime("%d.%m.%Y") }
