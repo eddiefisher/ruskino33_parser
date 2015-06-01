@@ -1,6 +1,5 @@
 module Ruskino33Parser
   class Movie
-    # get Nokogiri
     def initialize(movie)
       @movie = movie
     end
