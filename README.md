@@ -18,24 +18,24 @@ Or install it yourself as:
 
 ## Usage
 
-### Get anonce on this day
+### Get announce on this day
 ```ruby
-anonce = Ruskino33Parser::Anonce.new
+announce = Ruskino33Parser::Announce.new
 ```
 
-### Get anonce on next day
+### Get announce on next day
 ```ruby
-anonce = Ruskino33Parser::Anonce.new Date.today + 10.days
+announce = Ruskino33Parser::Announce.new Date.today + 10.days
 ```
 
 ### Get object of movies
 ```ruby
-anonce.movies
+announce.movies
 ```
 
 ### Get movie title
 ```ruby
-anonce.movies.first.title
+announce.movies.first.title
 ```
 
 ### Get movie schedules
@@ -45,7 +45,7 @@ anonce.movies.first.schedules
 
 ### Get movie other_days
 ```ruby
-anonce.movies.first.other_days
+announce.movies.first.other_days
 ```
 
 ## Development
